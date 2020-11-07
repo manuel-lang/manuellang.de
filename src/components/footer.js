@@ -120,6 +120,8 @@ const Footer = () => {
               </span>
             </div>
           )}
+
+          <div>Edited by Manuel Lang</div>
         </a>
       </StyledCredit>
     </StyledFooter>
