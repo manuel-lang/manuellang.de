@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import anime from 'animejs';
 import styled from 'styled-components';
 import { IconLoader } from '@components/icons';
-import { createTimeline, setDashoffset } from 'animejs';
+import { createTimeline } from 'animejs';
 
 
 const StyledLoader = styled.div`
@@ -50,7 +50,6 @@ const Loader = ({ finishLoading }) => {
         delay: 30,
         duration: 150,
         easing: 'easeInOutQuart',
-        strokeDashoffset: [setDashoffset, 0],
       })
       .add({
         targets: '#logo #B',

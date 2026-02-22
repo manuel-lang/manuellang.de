@@ -2,7 +2,7 @@
   "name": "manuellang.de",
   "description": "Personal Website V4",
   "version": "1.0.0",
-  "author": "Manuel Lang <manuellang183@gmail.com>",
+  "author": "Manuel Lang <mail@manuellang.de>",
   "repository": {
     "type": "git",
     "url": "https://github.com/manuel-lang/manuellang.de"
@@ -20,8 +20,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "prepare": "husky install",
-    "lint-staged": "lint-staged",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "lint-staged": "lint-staged"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [

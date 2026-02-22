@@ -7,6 +7,7 @@ slug: /pensieve/dark-mode-toggle
 tags:
   - Theming
   - Dark Mode
+url: 'abc'
 ---
 
 Dark mode toggle without the flash of default theme. Important bits:

@@ -7,6 +7,7 @@ slug: /pensieve/clickable-cards
 tags:
   - Accessibility
   - CSS
+url: 'https://codepen.io/bchiang7/pen/xxRBvgd?editors=1100'
 ---
 
 [Codepen Demo](https://codepen.io/bchiang7/pen/xxRBvgd?editors=1100)
