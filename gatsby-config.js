@@ -6,7 +6,6 @@ module.exports = {
     description:
       'Manuel Lang is a software engineer specializing in building data driven solutions.',
     siteUrl: 'https://manuellang.de', // No trailing slash allowed!
-    image: '/og.png', // Path to your image you placed in the 'static' folder
     twitterUsername: '@manu1833',
   },
   plugins: [

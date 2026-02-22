@@ -21,7 +21,7 @@ const useScrollDirection = ({ initialDirection, thresholdPixels, off } = {}) => 
       }
 
       setScrollDir(scrollY > lastScrollY ? SCROLL_DOWN : SCROLL_UP);
-      lastScrollY = scrollY > 0 ? scrollY : 0;
+      lastScrollY = Math.max(scrollY, 0);
       ticking = false;
     };
 

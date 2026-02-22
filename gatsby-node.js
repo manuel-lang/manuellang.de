@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-const path = require('path');
+const path = require('node:path');
 const _ = require('lodash');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
