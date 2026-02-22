@@ -34,8 +34,8 @@ const StyledHeader = styled.header`
   @media (prefers-reduced-motion: no-preference) {
     ${props =>
     props.scrollDirection === 'up' &&
-    !props.scrolledToTop &&
-    css`
+      !props.scrolledToTop &&
+      css`
         height: var(--nav-scroll-height);
         transform: translateY(0px);
         background-color: rgba(10, 25, 47, 0.85);
@@ -44,8 +44,8 @@ const StyledHeader = styled.header`
 
     ${props =>
     props.scrollDirection === 'down' &&
-    !props.scrolledToTop &&
-    css`
+      !props.scrolledToTop &&
+      css`
         height: var(--nav-scroll-height);
         transform: translateY(calc(var(--nav-scroll-height) * -1));
         box-shadow: 0 10px 30px -10px var(--navy-shadow);
@@ -205,12 +205,6 @@ const Nav = ({ isHome }) => {
     </div>
   );
 
-  const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-      Resume
-    </a>
-  );
-
   return (
     <StyledHeader scrollDirection={scrollDirection} scrolledToTop={scrolledToTop}>
       <StyledNav>
@@ -227,7 +221,6 @@ const Nav = ({ isHome }) => {
                     </li>
                   ))}
               </ol>
-              <div>{ResumeLink}</div>
             </StyledLinks>
 
             <Menu />
@@ -256,16 +249,6 @@ const Nav = ({ isHome }) => {
                     ))}
                 </TransitionGroup>
               </ol>
-
-              <TransitionGroup component={null}>
-                {isMounted && (
-                  <CSSTransition classNames={fadeDownClass} timeout={timeout}>
-                    <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
-                      {ResumeLink}
-                    </div>
-                  </CSSTransition>
-                )}
-              </TransitionGroup>
             </StyledLinks>
 
             <TransitionGroup component={null}>
