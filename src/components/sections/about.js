@@ -154,10 +154,9 @@ const About = () => {
           </div>
 
           <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+            {skills?.map((skill, i) => <li key={skill}>{skill}</li>)}
           </ul>
         </StyledText>
-
         <StyledPic>
           <div className="wrapper">
             <StaticImage

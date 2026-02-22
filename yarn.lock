@@ -16111,7 +16111,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.14.8, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.7.2":
+"@babel/runtime@npm:^7.10.0, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.14.8, @babel/runtime@npm:^7.15.4, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.7.2":
   version: 7.28.6
   resolution: "@babel/runtime@npm:7.28.6"
   checksum: 10c0/358cf2429992ac1c466df1a21c1601d595c46930a13c1d4662fde908d44ee78ec3c183aaff513ecb01ef8c55c3624afe0309eeeb34715672dbfadb7feedb2c0d
@@ -22631,6 +22631,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-image@npm:^2.2.34":
+  version: 2.11.0
+  resolution: "gatsby-image@npm:2.11.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.12.5"
+    object-fit-images: "npm:^3.2.4"
+    prop-types: "npm:^15.7.2"
+  checksum: 10c0/f1d2ae24f94df4a7b3f19d9844f86c9a5455484efe8b6f46a50c518044a199b5aeaef09969c43950f147302fb05fc947a9a41624e827fcb49d3e82e02d747e14
+  languageName: node
+  linkType: hard
+
 "gatsby-legacy-polyfills@npm:^1.15.0":
   version: 1.15.0
   resolution: "gatsby-legacy-polyfills@npm:1.15.0"
@@ -26200,6 +26211,7 @@ __metadata:
     eslint-plugin-jsx-a11y: "npm:^6.4.1"
     eslint-plugin-react: "npm:^7.23.2"
     gatsby: "npm:^3.4.1"
+    gatsby-image: "npm:^2.2.34"
     gatsby-plugin-google-analytics: "npm:^3.4.0"
     gatsby-plugin-image: "npm:^1.4.0"
     gatsby-plugin-manifest: "npm:^3.4.0"
@@ -27900,6 +27912,13 @@ __metadata:
     define-property: "npm:^0.2.5"
     kind-of: "npm:^3.0.3"
   checksum: 10c0/79314b05e9d626159a04f1d913f4c4aba9eae8848511cf5f4c8e3b04bb3cc313b65f60357f86462c959a14c2d58380fedf89b6b32ecec237c452a5ef3900a293
+  languageName: node
+  linkType: hard
+
+"object-fit-images@npm:^3.2.4":
+  version: 3.2.4
+  resolution: "object-fit-images@npm:3.2.4"
+  checksum: 10c0/cf8f53e0783e761fda1ef4321237c82007694fab8869569faaf87d1059e87dfcd325f1396ca6b8e9ec0660c17c69f6219d34c9db5127094545eea5a0670dd46e
   languageName: node
   linkType: hard
 

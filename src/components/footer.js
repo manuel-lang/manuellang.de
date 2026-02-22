@@ -63,7 +63,7 @@ const Footer = () => {
       </StyledLeftSideSocialLinks>
       <StyledFooter>
         <StyledCredit tabIndex="-1">
-          <div>2024 Grant Chiu</div>
+          <div>2024 Manuel Lang</div>
           <div>
             <a href="https://github.com/bchiang7/v4" target="_blank" rel="noopener noreferrer">
               Check out the inspiration
