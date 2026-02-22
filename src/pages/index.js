@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Layout, Hero, Contact } from '@components';
+import { About, Featured, Layout, Hero, Contact, Projects } from '@components';
 
 const StyledMainContainer = styled.main`
   counter-reset: section;
@@ -16,8 +16,9 @@ const IndexPage = ({ location }) => {
     <Layout location={location}>
       <StyledMainContainer className="fillHeight">
         <Hero />
-        {/* <Featured /> */}
-        {/* <Projects /> */}
+        <About />
+        <Featured />
+        <Projects />
         <Contact />
       </StyledMainContainer>
     </Layout>
