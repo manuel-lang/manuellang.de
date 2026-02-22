@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import anime from 'animejs';
 import styled from 'styled-components';
 import { IconLoader } from '@components/icons';
+import { createTimeline, setDashoffset } from 'animejs';
+
 
 const StyledLoader = styled.div`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -40,39 +42,38 @@ const Loader = ({ finishLoading }) => {
   const [isMounted, setIsMounted] = useState(false);
 
   const animate = () => {
-    const loader = anime.timeline({
-      complete: () => finishLoading(),
-    });
+    const loader = createTimeline({ defaults: { duration: 750 } });
 
     loader
       .add({
         targets: '#logo path',
-        delay: 300,
-        duration: 1500,
+        delay: 30,
+        duration: 150,
         easing: 'easeInOutQuart',
-        strokeDashoffset: [anime.setDashoffset, 0],
+        strokeDashoffset: [setDashoffset, 0],
       })
       .add({
         targets: '#logo #B',
-        duration: 700,
+        duration: 70,
         easing: 'easeInOutQuart',
         opacity: 1,
       })
       .add({
         targets: '#logo',
-        delay: 500,
-        duration: 300,
+        delay: 50,
+        duration: 30,
         easing: 'easeInOutQuart',
         opacity: 0,
         scale: 0.1,
       })
       .add({
         targets: '.loader',
-        duration: 200,
+        duration: 20,
         easing: 'easeInOutQuart',
         opacity: 0,
         zIndex: -1,
-      });
+      })
+      .then(() => finishLoading());
   };
 
   useEffect(() => {
